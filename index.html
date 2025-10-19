@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASSU Debate Club</title>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <!-- Tailwind config must be defined BEFORE loading the CDN -->
     <script>
+        tailwind = window.tailwind || {};
         tailwind.config = {
             theme: {
                 extend: {
@@ -25,6 +28,16 @@
             }
         }
     </script>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Feather icons -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <!-- Link to your custom stylesheet (ensure path matches where styles.css is served) -->
+    <link rel="stylesheet" href="styles.css">
+
     <style>
         .hero-gradient {
             background: linear-gradient(135deg, rgba(0,31,63,0.9) 0%, rgba(0,31,63,0.7) 100%);
@@ -43,9 +56,9 @@
                 <img src="https://glorious-azure-rtpzdgumlj.edgeone.app/ASSU%20Debate%20Club%20Logo%20with%20Speech%20Bubble%20Emblem%20(1).png" alt="School Emblem" class="h-12 w-12 object-contain">
                 <h1 class="font-heading text-2xl font-bold">ASSU Debate Club</h1>
             </div>
-            <img src="http://static.photos/education/200x200/2" alt="Club Emblem" class="h-10 w-10 object-contain">
+            <img src="https://static.photos/education/200x200/2" alt="Club Emblem" class="h-10 w-10 object-contain">
         </div>
-        <nav class="bg-gold-800">
+        <nav class="bg-gold">
             <div class="container mx-auto px-6 py-2 flex justify-center space-x-8">
                 <a href="#home" class="text-white hover:text-gold font-medium">Home</a>
                 <a href="#about" class="text-white hover:text-gold font-medium">About</a>
@@ -63,7 +76,7 @@
             <div class="max-w-3xl mx-auto text-center">
                 <h1 class="font-heading text-4xl md:text-5xl font-bold mb-6">Sharpen Your Mind,<br>Find Your Voice</h1>
                 <p class="text-xl mb-8">The ASSU Debate Club fosters critical thinking, articulate expression, and intellectual curiosity through competitive debate and thoughtful discourse.</p>
-                <a href="#join" class="bg-gold hover:bg-gold-600 text-navy font-bold py-3 px-8 rounded-full inline-block transition duration-300 transform hover:scale-105">Join Now</a>
+                <a href="#join" class="bg-gold hover:opacity-90 text-navy font-bold py-3 px-8 rounded-full inline-block transition duration-300 transform hover:scale-105">Join Now</a>
             </div>
         </div>
         <div class="absolute inset-0 opacity-20">
@@ -78,7 +91,7 @@
                 <h2 class="font-heading text-3xl font-bold text-center mb-12 text-navy">About The Club</h2>
                 <div class="flex flex-col md:flex-row gap-12">
                     <div class="md:w-1/2">
-                        <img src="http://static.photos/education/640x360/3" alt="Debate Team in Action" class="rounded-lg shadow-lg w-full h-auto mb-6">
+                        <img src="https://static.photos/education/640x360/3" alt="Debate Team in Action" class="rounded-lg shadow-lg w-full h-auto mb-6">
                         <img src="https://huggingface.co/spaces/BilLbone/undefined/resolve/main/images/istockphoto-499517325-612x612.jpg" alt="Debate Team" class="rounded-lg shadow-lg w-full h-auto">
                     </div>
 <div class="md:w-1/2 relative">
@@ -184,7 +197,7 @@
             <h2 class="font-heading text-3xl font-bold text-center mb-12 text-navy">Meet The Team</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
                 <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
-                    <img src="http://static.photos/education/640x360/4" alt="Team Member" class="w-full h-48 object-cover">
+                    <img src="https://static.photos/education/640x360/4" alt="Team Member" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="font-heading text-xl font-bold text-navy">Bilguuntugs Dalaibaatar</h3>
                         <p class="text-gold font-medium mb-2">President</p>
@@ -192,7 +205,7 @@
                     </div>
                 </div>
                 <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
-                    <img src="http://static.photos/education/640x360/5" alt="Team Member" class="w-full h-48 object-cover">
+                    <img src="https://static.photos/education/640x360/5" alt="Team Member" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="font-heading text-xl font-bold text-navy">Sarah Chen</h3>
                         <p class="text-gold font-medium mb-2">Vice President</p>
@@ -200,7 +213,7 @@
                     </div>
                 </div>
                 <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
-                    <img src="http://static.photos/education/640x360/6" alt="Team Member" class="w-full h-48 object-cover">
+                    <img src="https://static.photos/education/640x360/6" alt="Team Member" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="font-heading text-xl font-bold text-navy">Michael Rodriguez</h3>
                         <p class="text-gold font-medium mb-2">PR Lead</p>
@@ -208,7 +221,7 @@
                     </div>
                 </div>
                 <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
-                    <img src="http://static.photos/education/640x360/7" alt="Team Member" class="w-full h-48 object-cover">
+                    <img src="https://static.photos/education/640x360/7" alt="Team Member" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="font-heading text-xl font-bold text-navy">Priya Patel</h3>
                         <p class="text-gold font-medium mb-2">Treasurer</p>
@@ -248,7 +261,7 @@
                                 <label for="message" class="block mb-2">Why do you want to join?</label>
                                 <textarea id="message" rows="4" class="w-full px-4 py-2 rounded text-gray-800"></textarea>
                             </div>
-                            <button type="submit" class="bg-gold hover:bg-gold-600 text-navy font-bold py-3 px-8 rounded-full transition duration-300">Submit Application</button>
+                            <button type="submit" class="bg-gold hover:opacity-90 text-navy font-bold py-3 px-8 rounded-full transition duration-300">Submit Application</button>
                         </form>
                         <div class="mt-8 text-center">
                             <p class="mb-4">Or register directly through our Google Form:</p>
@@ -276,10 +289,10 @@
                         </div>
                         <h3 class="font-heading text-2xl font-bold mt-8 mb-4">Follow Us</h3>
                         <div class="flex space-x-6">
-                            <a href="#" class="text-gold hover:text-gold-300">
+                            <a href="#" class="text-gold hover:opacity-90">
                                 <i data-feather="instagram" class="w-6 h-6"></i>
                             </a>
-                            <a href="#" class="text-gold hover:text-gold-300">
+                            <a href="#" class="text-gold hover:opacity-90">
                                 <i data-feather="facebook" class="w-6 h-6"></i>
                             </a>
                           

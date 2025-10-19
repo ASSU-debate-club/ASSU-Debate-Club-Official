@@ -4,113 +4,325 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASSU Debate Club</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="assets/js/main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#1a3167',
+                        gold: '#d1a564',
+                    },
+                    fontFamily: {
+                        heading: ['Playfair Display', 'serif'],
+                        body: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(0,31,63,0.9) 0%, rgba(0,31,63,0.7) 100%);
+        }
+        .navy-divider {
+            height: 4px;
+            background: linear-gradient(90deg, rgba(255,215,0,0) 0%, rgba(255,215,0,1) 50%, rgba(255,215,0,0) 100%);
+        }
+    </style>
 </head>
-<body>
+<body class="font-body bg-gray-50">
     <!-- Header -->
-    <header>
-        <div class="container">
-            <h1>ASSU Debate Club</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#values">Values</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#join">Join Us</a></li>
-                </ul>
-            </nav>
+    <header class="bg-navy text-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="https://glorious-azure-rtpzdgumlj.edgeone.app/ASSU%20Debate%20Club%20Logo%20with%20Speech%20Bubble%20Emblem%20(1).png" alt="School Emblem" class="h-12 w-12 object-contain">
+                <h1 class="font-heading text-2xl font-bold">ASSU Debate Club</h1>
+            </div>
+            <img src="http://static.photos/education/200x200/2" alt="Club Emblem" class="h-10 w-10 object-contain">
         </div>
+        <nav class="bg-gold-800">
+            <div class="container mx-auto px-6 py-2 flex justify-center space-x-8">
+                <a href="#home" class="text-white hover:text-gold font-medium">Home</a>
+                <a href="#about" class="text-white hover:text-gold font-medium">About</a>
+                <a href="#values" class="text-white hover:text-gold font-medium">Values</a>
+                <a href="#events" class="text-white hover:text-gold font-medium">Events</a>
+                <a href="#team" class="text-white hover:text-gold font-medium">Team</a>
+                <a href="#join" class="text-white hover:text-gold font-medium">Join Us</a>
+            </div>
+        </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="home">
-        <div class="hero-content">
-            <h2>Sharpen Your Mind, Find Your Voice</h2>
-            <p>The ASSU Debate Club fosters critical thinking, articulate expression, and intellectual curiosity through competitive debate and thoughtful discourse.</p>
-            <a href="#join" class="join-button">Join Now</a>
+    <section id="home" class="hero-gradient text-white py-20 md:py-32 relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="font-heading text-4xl md:text-5xl font-bold mb-6">Sharpen Your Mind,<br>Find Your Voice</h1>
+                <p class="text-xl mb-8">The ASSU Debate Club fosters critical thinking, articulate expression, and intellectual curiosity through competitive debate and thoughtful discourse.</p>
+                <a href="#join" class="bg-gold hover:bg-gold-600 text-navy font-bold py-3 px-8 rounded-full inline-block transition duration-300 transform hover:scale-105">Join Now</a>
+            </div>
+        </div>
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-navy"></div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about">
-        <h2>About The Club</h2>
-        <p>The ASSU Debate Club provides students with opportunities to develop public speaking, research, and critical thinking skills through structured debates, competitions, and workshops.</p>
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="font-heading text-3xl font-bold text-center mb-12 text-navy">About The Club</h2>
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="md:w-1/2">
+                        <img src="http://static.photos/education/640x360/3" alt="Debate Team in Action" class="rounded-lg shadow-lg w-full h-auto mb-6">
+                        <img src="https://huggingface.co/spaces/BilLbone/undefined/resolve/main/images/istockphoto-499517325-612x612.jpg" alt="Debate Team" class="rounded-lg shadow-lg w-full h-auto">
+                    </div>
+<div class="md:w-1/2 relative">
+                        <h3 class="font-heading text-2xl font-bold mb-4 text-navy">What We Do</h3>
+<p class="mb-4 text-gray-700">The ASSU Debate Club provides students with opportunities to develop public speaking, research, and critical thinking skills through structured debates, competitions, and workshops.</p>
+                        <p class="mb-4 text-gray-700">We participate in local and regional tournaments, host guest speakers from various fields, and organize internal mock debates and lectures to sharpen our skills.</p>
+                        <h3 class="font-heading text-2xl font-bold mt-8 mb-4 text-navy">Why Join?</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-gold mr-2 mt-1 w-5 h-5"></i>
+                                <span>Develop confidence in public speaking</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-gold mr-2 mt-1 w-5 h-5"></i>
+                                <span>Enhance critical thinking and argumentation skills</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-gold mr-2 mt-1 w-5 h-5"></i>
+                                <span>Build teamwork and leadership abilities</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-gold mr-2 mt-1 w-5 h-5"></i>
+                                <span>Compete in regional tournaments</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Values Section -->
-    <section id="values">
-        <h2>Our Goals & Values</h2>
-        <div class="values-list">
-            <div class="value-item">
-                <h3>Critical Thinking</h3>
-                <p>We challenge assumptions and develop well-reasoned positions on complex issues.</p>
-            </div>
-            <div class="value-item">
-                <h3>Respectful Discourse</h3>
-                <p>We maintain an environment where diverse perspectives are heard and discussed with civility.</p>
-            </div>
-            <div class="value-item">
-                <h3>Leadership</h3>
-                <p>We develop confident communicators who can articulate ideas effectively.</p>
+    <section id="values" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="font-heading text-3xl font-bold mb-12 text-navy">Our Goals & Values</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <div class="bg-navy text-gold rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i data-feather="target" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold mb-3 text-navy">Critical Thinking</h3>
+                        <p class="text-gray-600">We challenge assumptions, analyze arguments, and develop well-reasoned positions on complex issues.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <div class="bg-navy text-gold rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i data-feather="users" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold mb-3 text-navy">Respectful Discourse</h3>
+                        <p class="text-gray-600">We maintain an environment where diverse perspectives are heard and discussed with civility and openness.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <div class="bg-navy text-gold rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i data-feather="award" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold mb-3 text-navy">Leadership</h3>
+                        <p class="text-gray-600">We develop confident communicators who can articulate ideas effectively and inspire others through thoughtful debate.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Events Section -->
-    <section id="events">
-        <h2>Events & Meetings</h2>
-        <ul class="events-list">
-            <li>Weekly Meeting - Every Tuesday</li>
-            <li>Intra-School Debate - Oct 15, 2023</li>
-            <li>Regional Tournament - Nov 5-6, 2023</li>
-            <li>Guest Speaker: Prof. Jane Smith - Dec 10, 2023</li>
-        </ul>
+    <section id="events" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="font-heading text-3xl font-bold text-center mb-12 text-navy">Events & Meetings</h2>
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-3 border-b border-gray-200 bg-navy text-white">
+                        <div class="p-4 font-bold">Date</div>
+                        <div class="p-4 font-bold">Event</div>
+                        <div class="p-4 font-bold">Location</div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 border-b border-gray-200 hover:bg-gray-100">
+                        <div class="p-4 font-medium">Every Tuesday</div>
+                        <div class="p-4">Weekly Meeting</div>
+                        <div class="p-4">Room 203</div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 border-b border-gray-200 hover:bg-gray-100">
+                        <div class="p-4 font-medium">Oct 15, 2023</div>
+                        <div class="p-4">Intra-School Debate</div>
+                        <div class="p-4">Auditorium</div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 border-b border-gray-200 hover:bg-gray-100">
+                        <div class="p-4 font-medium">Nov 5-6, 2023</div>
+                        <div class="p-4">Regional Tournament</div>
+                        <div class="p-4">City College</div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 border-b border-gray-200 hover:bg-gray-100">
+                        <div class="p-4 font-medium">Dec 10, 2023</div>
+                        <div class="p-4">Guest Speaker: Prof. Jane Smith</div>
+                        <div class="p-4">Library Conference Room</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Team Section -->
-    <section id="team">
-        <h2>Meet The Team</h2>
-        <div class="team-members">
-            <div class="team-member">
-                <h3>Bilguuntugs Dalaibaatar</h3>
-                <p>President</p>
-            </div>
-            <div class="team-member">
-                <h3>Sarah Chen</h3>
-                <p>Vice President</p>
-            </div>
-            <div class="team-member">
-                <h3>Michael Rodriguez</h3>
-                <p>PR Lead</p>
-            </div>
-            <div class="team-member">
-                <h3>Priya Patel</h3>
-                <p>Treasurer</p>
+    <section id="team" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="font-heading text-3xl font-bold text-center mb-12 text-navy">Meet The Team</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="http://static.photos/education/640x360/4" alt="Team Member" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-bold text-navy">Bilguuntugs Dalaibaatar</h3>
+                        <p class="text-gold font-medium mb-2">President</p>
+                        <p class="text-gray-600 text-sm">Sophomore, 10A</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="http://static.photos/education/640x360/5" alt="Team Member" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-bold text-navy">Sarah Chen</h3>
+                        <p class="text-gold font-medium mb-2">Vice President</p>
+                        <p class="text-gray-600 text-sm">Junior, Philosophy</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="http://static.photos/education/640x360/6" alt="Team Member" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-bold text-navy">Michael Rodriguez</h3>
+                        <p class="text-gold font-medium mb-2">PR Lead</p>
+                        <p class="text-gray-600 text-sm">Junior, Communications</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="http://static.photos/education/640x360/7" alt="Team Member" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-bold text-navy">Priya Patel</h3>
+                        <p class="text-gold font-medium mb-2">Treasurer</p>
+                        <p class="text-gray-600 text-sm">Sophomore, Economics</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Join Section -->
-    <section id="join">
-        <h2>Join Our Community</h2>
-        <form>
-            <label for="name">Full Name</label>
-            <input type="text" id="name" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" required>
-            <button type="submit">Submit Application</button>
-        </form>
+    <section id="join" class="py-20 bg-navy text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="font-heading text-3xl font-bold text-center mb-12">Join Our Community</h2>
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="md:w-1/2">
+                        <form class="space-y-6">
+                            <div>
+                                <label for="name" class="block mb-2">Full Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 rounded text-gray-800">
+                            </div>
+                            <div>
+                                <label for="email" class="block mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 rounded text-gray-800">
+                            </div>
+                            <div>
+                                <label for="year" class="block mb-2">Year</label>
+                                <select id="year" class="w-full px-4 py-2 rounded text-gray-800">
+                                    <option>Freshman</option>
+                                    <option>Sophomore</option>
+                                    <option>Junior</option>
+                                    <option>Senior</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="block mb-2">Why do you want to join?</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 rounded text-gray-800"></textarea>
+                            </div>
+                            <button type="submit" class="bg-gold hover:bg-gold-600 text-navy font-bold py-3 px-8 rounded-full transition duration-300">Submit Application</button>
+                        </form>
+                        <div class="mt-8 text-center">
+                            <p class="mb-4">Or register directly through our Google Form:</p>
+                            <a href="https://forms.gle/dvwmXqPEtsvimFwr8" target="_blank" class="bg-white text-navy hover:bg-gray-100 font-bold py-3 px-8 rounded-full inline-block transition duration-300 border border-gold">
+                                Register via Google Form
+                            </a>
+                        </div>
+</div>
+                    <div class="md:w-1/2">
+                        <h3 class="font-heading text-2xl font-bold mb-4">Contact Us</h3>
+                        <p class="mb-6">Have questions? Reach out to us through any of the channels below.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i data-feather="mail" class="mr-4 text-gold"></i>
+                                <span>assu.debate.club@gmail.com</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-feather="map-pin" class="mr-4 text-gold"></i>
+                                <span>Room 203, Main Building, ASSU</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-feather="clock" class="mr-4 text-gold"></i>
+                                <span>Tuesdays 2:50-3:30 PM</span>
+                            </div>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold mt-8 mb-4">Follow Us</h3>
+                        <div class="flex space-x-6">
+                            <a href="#" class="text-gold hover:text-gold-300">
+                                <i data-feather="instagram" class="w-6 h-6"></i>
+                            </a>
+                            <a href="#" class="text-gold hover:text-gold-300">
+                                <i data-feather="facebook" class="w-6 h-6"></i>
+                            </a>
+                          
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>© 2025 ASSU Debate Club. All rights reserved.</p>
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-4">
+                        <img src="https://glorious-azure-rtpzdgumlj.edgeone.app/ASSU%20Debate%20Club%20Logo%20with%20Speech%20Bubble%20Emblem%20(1).png" alt="School Emblem" class="h-10 w-10 object-contain">
+                        <span class="text-white font-bold">ASSU Debate Club</span>
+                    </div>
+                    <p class="mt-4 text-sm">Advisor: Psychologist Ariunjargal</p>
+                    <p class="text-sm">Australian Smart School of Ulaanbaatar</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-sm">© 2025 ASSU Debate Club. All rights reserved.</p>
+                    <p class="text-sm mt-2">Made with <i data-feather="heart" class="inline w-4 h-4 text-red-400"></i> by the Debate Team</p>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        feather.replace();
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>

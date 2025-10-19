@@ -1,0 +1,61 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1a3167;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav {
+    background-color: #d1a564;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background-color: #b89a4d;
+}
+
+.hero-gradient {
+    background: linear-gradient(135deg, rgba(0,31,63,0.9) 0%, rgba(0,31,63,0.7) 100%);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    background-color: #d1a564;
+    color: #1a3167;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b89a4d;
+}
